@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_yellow"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Hello from Viktoriia!"
+        android:textSize="40sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/changeTextColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/pastel_blue"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:text="Click to change text color"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/changeBackgroundButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeTextColorButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/pastel_blue"
+        android:padding="10dp"
+        android:text="Click to change background color"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        />
+
+    <TextView
+        android:id="@+id/changeLabelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeBackgroundButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/pastel_blue"
+        android:padding="10dp"
+        android:text="Click to change the label text"
+        android:textColor="@color/white"
+        android:textSize="26sp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/setOwnTextButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Type in your text here..."
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/setOwnTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/changeLabelButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@color/pastel_blue"
+        android:padding="10dp"
+        android:text="Click to set your custom text"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        />
+
+
+</RelativeLayout>
